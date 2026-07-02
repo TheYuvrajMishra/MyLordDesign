@@ -1,0 +1,669 @@
+{
+  "executiveSummary": "Audit completed on https://foontro.com/. Overall score 81/100. Key opportunities center on layout and grid analysis, performance perception and modernity alignment, brand and design identity evaluation.",
+  "overallScore": 81,
+  "strengths": [
+    "Visual Hierarchy Analysis: Hierarchy strength is evaluated from heading structure density, card segmentation, and above-the-fold clarity.",
+    "Typography Analysis: Typography scale shows 6 frequent font-size steps in desktop mode.",
+    "Mobile Responsiveness Review: Responsiveness is measured by mobile viewport rendering behavior and overflow indicators.",
+    "Interaction Design Review: Detected 51 interactive controls and 24 animated nodes."
+  ],
+  "weaknesses": [],
+  "prioritizedRecommendations": [
+    "Define consistent max-widths and gutter scales per breakpoint tier.",
+    "Use progressive reveal only where it supports comprehension, not decoration.",
+    "Limit production typography to 2-3 font families with explicit role assignments.",
+    "Add meaningful alt text for informative images and empty alt for decorative assets.",
+    "Codify one high-attention CTA hue and reserve it for conversion-critical actions.",
+    "Remove dead-end click targets and ensure every interaction yields visible feedback."
+  ],
+  "sections": [
+    {
+      "id": "brand-identity",
+      "title": "Brand and Design Identity Evaluation",
+      "score": 76,
+      "summary": "Visual identity appears fragmented across typography and component styling.",
+      "findings": [
+        "Detected 4 dominant font families in desktop rendering.",
+        "Top textual color tokens show 6 recurring values.",
+        "Navigation appears 2 time(s), indicating multiple navigation patterns."
+      ],
+      "recommendations": [
+        "Limit production typography to 2-3 font families with explicit role assignments.",
+        "Map recurring color tokens into a semantic design-token set (text, surface, action, status)."
+      ],
+      "severity": "medium",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "visual-hierarchy",
+      "title": "Visual Hierarchy Analysis",
+      "score": 94,
+      "summary": "Hierarchy strength is evaluated from heading structure density, card segmentation, and above-the-fold clarity.",
+      "findings": [
+        "Heading nodes detected: 30.",
+        "Card-like content clusters detected: 193.",
+        "Sticky/fixed framing elements found: 3."
+      ],
+      "recommendations": [
+        "Ensure the first viewport communicates one dominant value proposition and one primary CTA.",
+        "Reduce competing visual weights in parallel content blocks."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-main",
+        "mobile-full",
+        "mobile-main"
+      ]
+    },
+    {
+      "id": "typography",
+      "title": "Typography Analysis",
+      "score": 81,
+      "summary": "Typography scale shows 6 frequent font-size steps in desktop mode.",
+      "findings": [
+        "Most common families: Nunito, \"Be Vietnam Pro\", Inter, sans-serif (182) | Zain, Nunito, \"Be Vietnam Pro\", Inter, sans-serif (125) | Baumans, Zain, Nunito, \"Be Vietnam Pro\", Inter, sans-serif, sans-serif (24) | ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace (1).",
+        "Most common sizes: 14px (94) | 19.2px (58) | 16px (44) | 18px (34) | 12px (23) | 13px (19)."
+      ],
+      "recommendations": [
+        "Constrain heading/body/caption scale into a documented modular ratio.",
+        "Enforce readable body line length and minimum line-height for dense sections."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-main",
+        "mobile-full",
+        "mobile-main"
+      ]
+    },
+    {
+      "id": "color-psychology",
+      "title": "Color Psychology Analysis",
+      "score": 78,
+      "summary": "Detected 6 recurring text color values; palette cohesion influences trust and conversion confidence.",
+      "findings": [
+        "Top text colors: rgb(34, 31, 26) (89) | rgb(100, 91, 82) (53) | rgb(160, 160, 160) (37) | rgb(107, 114, 128) (18) | rgb(0, 255, 0) (16) | rgb(239, 131, 73) (4).",
+        "Animation-intense nodes: 24, which can alter perceived visual calmness."
+      ],
+      "recommendations": [
+        "Codify one high-attention CTA hue and reserve it for conversion-critical actions.",
+        "Audit contrast for secondary text against all major surface colors."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "layout-grid",
+      "title": "Layout and Grid Analysis",
+      "score": 72,
+      "summary": "Layout structure uses 12 grid and 244 flex containers in sampled nodes.",
+      "findings": [
+        "Desktop overflow detected: no.",
+        "Mobile overflow detected: no."
+      ],
+      "recommendations": [
+        "Define consistent max-widths and gutter scales per breakpoint tier.",
+        "Use grid for macro-layout and flex for local alignment to improve predictability."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "accessibility",
+      "title": "Accessibility Review",
+      "score": 76,
+      "summary": "Accessibility quality is scored using image alt coverage and interactive control labeling checks.",
+      "findings": [
+        "Images without useful alt text: 1.",
+        "Empty links detected: 5.",
+        "Buttons without accessible label text: 2."
+      ],
+      "recommendations": [
+        "Add meaningful alt text for informative images and empty alt for decorative assets.",
+        "Ensure every interactive control has visible or aria-based labeling."
+      ],
+      "severity": "medium",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-main",
+        "mobile-full",
+        "mobile-main"
+      ]
+    },
+    {
+      "id": "mobile-responsiveness",
+      "title": "Mobile Responsiveness Review",
+      "score": 88,
+      "summary": "Responsiveness is measured by mobile viewport rendering behavior and overflow indicators.",
+      "findings": [
+        "Mobile viewport configured at 390x844.",
+        "Mobile horizontal overflow: not detected."
+      ],
+      "recommendations": [
+        "Prioritize tap targets, spacing rhythm, and vertical content flow in mobile-first QA.",
+        "Validate all CTAs and forms in narrow viewport states."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "mobile-full",
+        "mobile-above-fold",
+        "mobile-main",
+        "mobile-footer"
+      ]
+    },
+    {
+      "id": "interaction-design",
+      "title": "Interaction Design Review",
+      "score": 80,
+      "summary": "Detected 51 interactive controls and 24 animated nodes.",
+      "findings": [
+        "Forms detected: 2.",
+        "Sticky/fixed interaction anchors: 3."
+      ],
+      "recommendations": [
+        "Normalize hover, focus, and pressed states across all interactive controls.",
+        "Ensure motion supports feedback clarity without delaying user intent."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "conversion-optimization",
+      "title": "Conversion Optimization Review",
+      "score": 87,
+      "summary": "Conversion language indicators found: 1; trust indicators found: 19.",
+      "findings": [
+        "Primary CTA opportunities detected: 51.",
+        "Trust-oriented copy patterns detected: 19."
+      ],
+      "recommendations": [
+        "Align hero CTA, mid-page CTA, and footer CTA messaging to one conversion path.",
+        "Strengthen social proof and risk-reversal messaging near commitment actions."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "ux-friction",
+      "title": "UX Friction Analysis",
+      "score": 78,
+      "summary": "Friction score combines accessibility defects, overflow behavior, and interaction dead-ends.",
+      "findings": [
+        "Empty link nodes: 5.",
+        "Unlabeled buttons: 2.",
+        "Mobile overflow status: no overflow detected."
+      ],
+      "recommendations": [
+        "Remove dead-end click targets and ensure every interaction yields visible feedback.",
+        "Resolve horizontal overflow and spacing collisions in narrow breakpoints."
+      ],
+      "severity": "medium",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-main",
+        "mobile-full",
+        "mobile-main"
+      ]
+    },
+    {
+      "id": "consistency-component-maturity",
+      "title": "Consistency and Component-System Maturity",
+      "score": 87,
+      "summary": "Component maturity is inferred from repeated card/button patterns and cross-section visual reuse.",
+      "findings": [
+        "Card-like modules detected: 193.",
+        "Button-like controls detected: 51."
+      ],
+      "recommendations": [
+        "Convert repeated UI blocks into standardized component variants with token-driven theming.",
+        "Audit variant sprawl and remove one-off button/card treatments."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-cards",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "performance-modernity",
+      "title": "Performance Perception and Modernity Alignment",
+      "score": 75,
+      "summary": "Perceived performance is influenced by motion load, content density, and structural modern UI patterns.",
+      "findings": [
+        "Animated/transitioned nodes sampled: 24.",
+        "Primary content text length: 5933 characters."
+      ],
+      "recommendations": [
+        "Use progressive reveal only where it supports comprehension, not decoration.",
+        "Balance visual modernity with motion restraint and predictable loading states."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "competitive-perception",
+      "title": "Competitive-Quality Perception",
+      "score": 82,
+      "summary": "Competitive quality is inferred from modern layout patterns, hierarchy clarity, and conversion confidence.",
+      "findings": [
+        "Modernity score: 72/100.",
+        "Hierarchy score: 94/100.",
+        "Conversion score: 87/100."
+      ],
+      "recommendations": [
+        "Benchmark hero clarity and CTA confidence against category leaders quarterly.",
+        "Prioritize visual differentiation in key conversion zones without sacrificing usability."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "desktop-full",
+      "type": "full",
+      "label": "Full page (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/97366385-4ba5-4e50-9075-aa026df91c9d/desktop-full.png"
+    },
+    {
+      "id": "desktop-above-fold",
+      "type": "above-fold",
+      "label": "Above the fold (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/97366385-4ba5-4e50-9075-aa026df91c9d/desktop-above-fold.png"
+    },
+    {
+      "id": "desktop-navigation",
+      "type": "navigation",
+      "label": "Navigation (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/97366385-4ba5-4e50-9075-aa026df91c9d/desktop-navigation.png"
+    },
+    {
+      "id": "desktop-main",
+      "type": "main",
+      "label": "Main content (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/97366385-4ba5-4e50-9075-aa026df91c9d/desktop-main.png"
+    },
+    {
+      "id": "desktop-footer",
+      "type": "footer",
+      "label": "Footer (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/97366385-4ba5-4e50-9075-aa026df91c9d/desktop-footer.png"
+    },
+    {
+      "id": "desktop-form",
+      "type": "form",
+      "label": "Primary form (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/97366385-4ba5-4e50-9075-aa026df91c9d/desktop-form.png"
+    },
+    {
+      "id": "desktop-cards",
+      "type": "cards",
+      "label": "Card pattern (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/97366385-4ba5-4e50-9075-aa026df91c9d/desktop-cards.png"
+    },
+    {
+      "id": "mobile-full",
+      "type": "full",
+      "label": "Full page (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/97366385-4ba5-4e50-9075-aa026df91c9d/mobile-full.png"
+    },
+    {
+      "id": "mobile-above-fold",
+      "type": "above-fold",
+      "label": "Above the fold (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/97366385-4ba5-4e50-9075-aa026df91c9d/mobile-above-fold.png"
+    },
+    {
+      "id": "mobile-main",
+      "type": "main",
+      "label": "Main content (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/97366385-4ba5-4e50-9075-aa026df91c9d/mobile-main.png"
+    },
+    {
+      "id": "mobile-footer",
+      "type": "footer",
+      "label": "Footer (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/97366385-4ba5-4e50-9075-aa026df91c9d/mobile-footer.png"
+    }
+  ],
+  "colorPaletteScheme": {
+    "summary": "Detected 6 dominant text colors, 2 surface colors, and 1 accent/border colors.",
+    "roles": [
+      {
+        "role": "Primary text",
+        "value": "rgb(34, 31, 26)"
+      },
+      {
+        "role": "Secondary text",
+        "value": "rgb(100, 91, 82)"
+      },
+      {
+        "role": "Primary surface",
+        "value": "rgb(0, 255, 0)"
+      },
+      {
+        "role": "Secondary surface",
+        "value": "rgb(239, 131, 73)"
+      },
+      {
+        "role": "Accent / CTA",
+        "value": "rgb(0, 255, 0)"
+      }
+    ],
+    "textPalette": [
+      {
+        "value": "rgb(34, 31, 26)",
+        "count": 89
+      },
+      {
+        "value": "rgb(100, 91, 82)",
+        "count": 53
+      },
+      {
+        "value": "rgb(160, 160, 160)",
+        "count": 37
+      },
+      {
+        "value": "rgb(107, 114, 128)",
+        "count": 18
+      },
+      {
+        "value": "rgb(0, 255, 0)",
+        "count": 16
+      },
+      {
+        "value": "rgb(239, 131, 73)",
+        "count": 4
+      }
+    ],
+    "surfacePalette": [
+      {
+        "value": "rgb(0, 255, 0)",
+        "count": 1
+      },
+      {
+        "value": "rgb(239, 131, 73)",
+        "count": 1
+      }
+    ],
+    "accentPalette": [
+      {
+        "value": "rgb(0, 255, 0)",
+        "count": 2
+      }
+    ]
+  },
+  "metadata": {
+    "targetUrl": "https://foontro.com/",
+    "analyzedAt": "2026-07-02T19:37:14.177Z",
+    "durationMs": 86547,
+    "viewportModes": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "diagnostics": {
+    "desktop": {
+      "viewport": "desktop",
+      "title": "Hire Verified Freelancers in India | Secure Escrow Payments | Foontro",
+      "description": "Join Foontro to hire expert freelancers or find remote jobs. The premier freelance marketplace connecting businesses with top talent in design, programming, writing, and more.",
+      "headingCount": 30,
+      "cards": 193,
+      "navCount": 2,
+      "stickyElements": 3,
+      "flexContainers": 244,
+      "gridContainers": 12,
+      "buttonCount": 51,
+      "formCount": 2,
+      "missingAltImages": 1,
+      "emptyLinks": 5,
+      "unlabeledButtons": 2,
+      "hasHorizontalOverflow": false,
+      "trustSignals": 19,
+      "conversionSignals": 1,
+      "animatedNodes": 24,
+      "contentLength": 5933,
+      "typography": {
+        "fontFamilies": {
+          "Baumans, Zain, Nunito, \"Be Vietnam Pro\", Inter, sans-serif, sans-serif": 24,
+          "Nunito, \"Be Vietnam Pro\", Inter, sans-serif": 182,
+          "Zain, Nunito, \"Be Vietnam Pro\", Inter, sans-serif": 125,
+          "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace": 1
+        },
+        "fontSizes": {
+          "16px": 44,
+          "20px": 13,
+          "14px": 94,
+          "10px": 3,
+          "13px": 19,
+          "58px": 2,
+          "38px": 1,
+          "21px": 4,
+          "12px": 23,
+          "11px": 3,
+          "32px": 2,
+          "24px": 1,
+          "17px": 4,
+          "48px": 3,
+          "60px": 3,
+          "15px": 2,
+          "42.4px": 4,
+          "18.4px": 4,
+          "13.5px": 8,
+          "36px": 2,
+          "18px": 34,
+          "72px": 1,
+          "19.2px": 58
+        }
+      },
+      "colors": {
+        "text": {
+          "rgb(34, 31, 26)": 89,
+          "rgb(100, 91, 82)": 53,
+          "rgb(0, 255, 0)": 16,
+          "rgb(0, 141, 0)": 1,
+          "rgb(239, 131, 73)": 4,
+          "rgb(95, 217, 120)": 3,
+          "rgb(107, 114, 128)": 18,
+          "rgb(224, 224, 224)": 4,
+          "rgb(160, 160, 160)": 37
+        },
+        "backgrounds": {
+          "rgb(0, 255, 0)": 1,
+          "rgb(239, 131, 73)": 1
+        },
+        "borders": {
+          "rgb(0, 255, 0)": 2
+        }
+      }
+    },
+    "mobile": {
+      "viewport": "mobile",
+      "title": "Hire Verified Freelancers in India | Secure Escrow Payments | Foontro",
+      "description": "Join Foontro to hire expert freelancers or find remote jobs. The premier freelance marketplace connecting businesses with top talent in design, programming, writing, and more.",
+      "headingCount": 30,
+      "cards": 193,
+      "navCount": 2,
+      "stickyElements": 2,
+      "flexContainers": 243,
+      "gridContainers": 12,
+      "buttonCount": 51,
+      "formCount": 2,
+      "missingAltImages": 1,
+      "emptyLinks": 5,
+      "unlabeledButtons": 2,
+      "hasHorizontalOverflow": false,
+      "trustSignals": 18,
+      "conversionSignals": 1,
+      "animatedNodes": 24,
+      "contentLength": 5574,
+      "typography": {
+        "fontFamilies": {
+          "Baumans, Zain, Nunito, \"Be Vietnam Pro\", Inter, sans-serif, sans-serif": 24,
+          "Nunito, \"Be Vietnam Pro\", Inter, sans-serif": 182,
+          "Zain, Nunito, \"Be Vietnam Pro\", Inter, sans-serif": 125,
+          "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace": 1
+        },
+        "fontSizes": {
+          "16px": 101,
+          "20px": 4,
+          "14px": 93,
+          "12px": 51,
+          "10px": 6,
+          "13px": 1,
+          "32px": 4,
+          "24px": 7,
+          "15px": 6,
+          "11px": 21,
+          "17px": 4,
+          "30px": 3,
+          "30.4px": 4,
+          "16.8px": 4,
+          "12.5px": 8,
+          "18px": 14,
+          "60px": 1
+        }
+      },
+      "colors": {
+        "text": {
+          "rgb(34, 31, 26)": 89,
+          "rgb(100, 91, 82)": 53,
+          "rgb(0, 255, 0)": 16,
+          "rgb(0, 141, 0)": 1,
+          "rgb(239, 131, 73)": 4,
+          "rgb(95, 217, 120)": 3,
+          "rgb(107, 114, 128)": 18,
+          "rgb(224, 224, 224)": 4,
+          "rgb(160, 160, 160)": 37
+        },
+        "backgrounds": {
+          "rgb(0, 255, 0)": 1,
+          "rgb(239, 131, 73)": 1
+        },
+        "borders": {
+          "rgb(0, 255, 0)": 2
+        }
+      }
+    },
+    "typographyTop": {
+      "families": [
+        {
+          "label": "Nunito, \"Be Vietnam Pro\", Inter, sans-serif",
+          "count": 182
+        },
+        {
+          "label": "Zain, Nunito, \"Be Vietnam Pro\", Inter, sans-serif",
+          "count": 125
+        },
+        {
+          "label": "Baumans, Zain, Nunito, \"Be Vietnam Pro\", Inter, sans-serif, sans-serif",
+          "count": 24
+        },
+        {
+          "label": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+          "count": 1
+        }
+      ],
+      "scale": [
+        {
+          "label": "14px",
+          "count": 94
+        },
+        {
+          "label": "19.2px",
+          "count": 58
+        },
+        {
+          "label": "16px",
+          "count": 44
+        },
+        {
+          "label": "18px",
+          "count": 34
+        },
+        {
+          "label": "12px",
+          "count": 23
+        },
+        {
+          "label": "13px",
+          "count": 19
+        }
+      ]
+    },
+    "colorTop": [
+      {
+        "label": "rgb(34, 31, 26)",
+        "count": 89
+      },
+      {
+        "label": "rgb(100, 91, 82)",
+        "count": 53
+      },
+      {
+        "label": "rgb(160, 160, 160)",
+        "count": 37
+      },
+      {
+        "label": "rgb(107, 114, 128)",
+        "count": 18
+      },
+      {
+        "label": "rgb(0, 255, 0)",
+        "count": 16
+      },
+      {
+        "label": "rgb(239, 131, 73)",
+        "count": 4
+      }
+    ]
+  },
+  "jobId": "97366385-4ba5-4e50-9075-aa026df91c9d"
+}
