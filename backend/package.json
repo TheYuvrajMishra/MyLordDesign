@@ -7,6 +7,11 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "puppeteer": "^25.0.2"
   }
 }

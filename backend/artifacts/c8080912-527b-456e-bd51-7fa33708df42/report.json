@@ -1,0 +1,600 @@
+{
+  "executiveSummary": "Audit completed on https://google.com/. Overall score 71/100. Key opportunities center on conversion optimization review, visual hierarchy analysis, layout and grid analysis.",
+  "overallScore": 71,
+  "strengths": [
+    "Brand and Design Identity Evaluation: Visual identity appears focused across typography and component styling.",
+    "Mobile Responsiveness Review: Responsiveness is measured by mobile viewport rendering behavior and overflow indicators.",
+    "UX Friction Analysis: Friction score combines accessibility defects, overflow behavior, and interaction dead-ends."
+  ],
+  "weaknesses": [
+    "Visual Hierarchy Analysis: Heading nodes detected: 0.",
+    "Layout and Grid Analysis: Desktop overflow detected: no.",
+    "Conversion Optimization Review: Primary CTA opportunities detected: 17.",
+    "Consistency and Component-System Maturity: Card-like modules detected: 0."
+  ],
+  "prioritizedRecommendations": [
+    "Align hero CTA, mid-page CTA, and footer CTA messaging to one conversion path.",
+    "Ensure the first viewport communicates one dominant value proposition and one primary CTA.",
+    "Define consistent max-widths and gutter scales per breakpoint tier.",
+    "Convert repeated UI blocks into standardized component variants with token-driven theming.",
+    "Benchmark hero clarity and CTA confidence against category leaders quarterly.",
+    "Add meaningful alt text for informative images and empty alt for decorative assets."
+  ],
+  "sections": [
+    {
+      "id": "brand-identity",
+      "title": "Brand and Design Identity Evaluation",
+      "score": 86,
+      "summary": "Visual identity appears focused across typography and component styling.",
+      "findings": [
+        "Detected 3 dominant font families in desktop rendering.",
+        "Top textual color tokens show 5 recurring values.",
+        "Navigation appears 0 time(s), indicating multiple navigation patterns."
+      ],
+      "recommendations": [
+        "Limit production typography to 2-3 font families with explicit role assignments.",
+        "Map recurring color tokens into a semantic design-token set (text, surface, action, status)."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-header",
+        "mobile-full",
+        "mobile-header"
+      ]
+    },
+    {
+      "id": "visual-hierarchy",
+      "title": "Visual Hierarchy Analysis",
+      "score": 62,
+      "summary": "Hierarchy strength is evaluated from heading structure density, card segmentation, and above-the-fold clarity.",
+      "findings": [
+        "Heading nodes detected: 0.",
+        "Card-like content clusters detected: 0.",
+        "Sticky/fixed framing elements found: 2."
+      ],
+      "recommendations": [
+        "Ensure the first viewport communicates one dominant value proposition and one primary CTA.",
+        "Reduce competing visual weights in parallel content blocks."
+      ],
+      "severity": "medium",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "typography",
+      "title": "Typography Analysis",
+      "score": 73,
+      "summary": "Typography scale shows 2 frequent font-size steps in desktop mode.",
+      "findings": [
+        "Most common families: Arial, sans-serif (29) | arial, sans-serif (2) | \"Google Sans Text\", Roboto, Helvetica, Arial, sans-serif (2).",
+        "Most common sizes: 14px (22) | 13px (11)."
+      ],
+      "recommendations": [
+        "Constrain heading/body/caption scale into a documented modular ratio.",
+        "Enforce readable body line length and minimum line-height for dense sections."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "color-psychology",
+      "title": "Color Psychology Analysis",
+      "score": 75,
+      "summary": "Detected 5 recurring text color values; palette cohesion influences trust and conversion confidence.",
+      "findings": [
+        "Top text colors: rgb(31, 31, 31) (20) | rgb(26, 13, 171) (9) | rgb(255, 255, 255) (2) | rgb(0, 0, 0) (1) | rgb(32, 33, 36) (1).",
+        "Animation-intense nodes: 0, which can alter perceived visual calmness."
+      ],
+      "recommendations": [
+        "Codify one high-attention CTA hue and reserve it for conversion-critical actions.",
+        "Audit contrast for secondary text against all major surface colors."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "layout-grid",
+      "title": "Layout and Grid Analysis",
+      "score": 64,
+      "summary": "Layout structure uses 0 grid and 49 flex containers in sampled nodes.",
+      "findings": [
+        "Desktop overflow detected: no.",
+        "Mobile overflow detected: no."
+      ],
+      "recommendations": [
+        "Define consistent max-widths and gutter scales per breakpoint tier.",
+        "Use grid for macro-layout and flex for local alignment to improve predictability."
+      ],
+      "severity": "medium",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "accessibility",
+      "title": "Accessibility Review",
+      "score": 72,
+      "summary": "Accessibility quality is scored using image alt coverage and interactive control labeling checks.",
+      "findings": [
+        "Images without useful alt text: 9.",
+        "Empty links detected: 1.",
+        "Buttons without accessible label text: 1."
+      ],
+      "recommendations": [
+        "Add meaningful alt text for informative images and empty alt for decorative assets.",
+        "Ensure every interactive control has visible or aria-based labeling."
+      ],
+      "severity": "medium",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "mobile-responsiveness",
+      "title": "Mobile Responsiveness Review",
+      "score": 88,
+      "summary": "Responsiveness is measured by mobile viewport rendering behavior and overflow indicators.",
+      "findings": [
+        "Mobile viewport configured at 390x844.",
+        "Mobile horizontal overflow: not detected."
+      ],
+      "recommendations": [
+        "Prioritize tap targets, spacing rhythm, and vertical content flow in mobile-first QA.",
+        "Validate all CTAs and forms in narrow viewport states."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "mobile-full",
+        "mobile-above-fold",
+        "mobile-header",
+        "mobile-form"
+      ]
+    },
+    {
+      "id": "interaction-design",
+      "title": "Interaction Design Review",
+      "score": 72,
+      "summary": "Detected 17 interactive controls and 0 animated nodes.",
+      "findings": [
+        "Forms detected: 1.",
+        "Sticky/fixed interaction anchors: 2."
+      ],
+      "recommendations": [
+        "Normalize hover, focus, and pressed states across all interactive controls.",
+        "Ensure motion supports feedback clarity without delaying user intent."
+      ],
+      "severity": "medium",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "conversion-optimization",
+      "title": "Conversion Optimization Review",
+      "score": 54,
+      "summary": "Conversion language indicators found: 0; trust indicators found: 1.",
+      "findings": [
+        "Primary CTA opportunities detected: 17.",
+        "Trust-oriented copy patterns detected: 1."
+      ],
+      "recommendations": [
+        "Align hero CTA, mid-page CTA, and footer CTA messaging to one conversion path.",
+        "Strengthen social proof and risk-reversal messaging near commitment actions."
+      ],
+      "severity": "high",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "ux-friction",
+      "title": "UX Friction Analysis",
+      "score": 86,
+      "summary": "Friction score combines accessibility defects, overflow behavior, and interaction dead-ends.",
+      "findings": [
+        "Empty link nodes: 1.",
+        "Unlabeled buttons: 1.",
+        "Mobile overflow status: no overflow detected."
+      ],
+      "recommendations": [
+        "Remove dead-end click targets and ensure every interaction yields visible feedback.",
+        "Resolve horizontal overflow and spacing collisions in narrow breakpoints."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "consistency-component-maturity",
+      "title": "Consistency and Component-System Maturity",
+      "score": 66,
+      "summary": "Component maturity is inferred from repeated card/button patterns and cross-section visual reuse.",
+      "findings": [
+        "Card-like modules detected: 0.",
+        "Button-like controls detected: 17."
+      ],
+      "recommendations": [
+        "Convert repeated UI blocks into standardized component variants with token-driven theming.",
+        "Audit variant sprawl and remove one-off button/card treatments."
+      ],
+      "severity": "medium",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "performance-modernity",
+      "title": "Performance Perception and Modernity Alignment",
+      "score": 72,
+      "summary": "Perceived performance is influenced by motion load, content density, and structural modern UI patterns.",
+      "findings": [
+        "Animated/transitioned nodes sampled: 0.",
+        "Primary content text length: 179 characters."
+      ],
+      "recommendations": [
+        "Use progressive reveal only where it supports comprehension, not decoration.",
+        "Balance visual modernity with motion restraint and predictable loading states."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "competitive-perception",
+      "title": "Competitive-Quality Perception",
+      "score": 67,
+      "summary": "Competitive quality is inferred from modern layout patterns, hierarchy clarity, and conversion confidence.",
+      "findings": [
+        "Modernity score: 66/100.",
+        "Hierarchy score: 62/100.",
+        "Conversion score: 54/100."
+      ],
+      "recommendations": [
+        "Benchmark hero clarity and CTA confidence against category leaders quarterly.",
+        "Prioritize visual differentiation in key conversion zones without sacrificing usability."
+      ],
+      "severity": "high",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "desktop-full",
+      "type": "full",
+      "label": "Full page (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/c8080912-527b-456e-bd51-7fa33708df42/desktop-full.png"
+    },
+    {
+      "id": "desktop-above-fold",
+      "type": "above-fold",
+      "label": "Above the fold (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/c8080912-527b-456e-bd51-7fa33708df42/desktop-above-fold.png"
+    },
+    {
+      "id": "desktop-header",
+      "type": "header",
+      "label": "Header (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/c8080912-527b-456e-bd51-7fa33708df42/desktop-header.png"
+    },
+    {
+      "id": "desktop-form",
+      "type": "form",
+      "label": "Primary form (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/c8080912-527b-456e-bd51-7fa33708df42/desktop-form.png"
+    },
+    {
+      "id": "mobile-full",
+      "type": "full",
+      "label": "Full page (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/c8080912-527b-456e-bd51-7fa33708df42/mobile-full.png"
+    },
+    {
+      "id": "mobile-above-fold",
+      "type": "above-fold",
+      "label": "Above the fold (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/c8080912-527b-456e-bd51-7fa33708df42/mobile-above-fold.png"
+    },
+    {
+      "id": "mobile-header",
+      "type": "header",
+      "label": "Header (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/c8080912-527b-456e-bd51-7fa33708df42/mobile-header.png"
+    },
+    {
+      "id": "mobile-form",
+      "type": "form",
+      "label": "Primary form (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/c8080912-527b-456e-bd51-7fa33708df42/mobile-form.png"
+    }
+  ],
+  "colorPaletteScheme": {
+    "summary": "Detected 5 dominant text colors, 2 surface colors, and 5 accent/border colors.",
+    "roles": [
+      {
+        "role": "Primary text",
+        "value": "rgb(31, 31, 31)"
+      },
+      {
+        "role": "Secondary text",
+        "value": "rgb(26, 13, 171)"
+      },
+      {
+        "role": "Primary surface",
+        "value": "rgb(11, 87, 208)"
+      },
+      {
+        "role": "Secondary surface",
+        "value": "rgb(255, 255, 255)"
+      },
+      {
+        "role": "Accent / CTA",
+        "value": "rgb(31, 31, 31)"
+      }
+    ],
+    "textPalette": [
+      {
+        "value": "rgb(31, 31, 31)",
+        "count": 20
+      },
+      {
+        "value": "rgb(26, 13, 171)",
+        "count": 9
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 2
+      },
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 1
+      },
+      {
+        "value": "rgb(32, 33, 36)",
+        "count": 1
+      }
+    ],
+    "surfacePalette": [
+      {
+        "value": "rgb(11, 87, 208)",
+        "count": 1
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 1
+      }
+    ],
+    "accentPalette": [
+      {
+        "value": "rgb(31, 31, 31)",
+        "count": 20
+      },
+      {
+        "value": "rgb(26, 13, 171)",
+        "count": 9
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 2
+      },
+      {
+        "value": "rgb(248, 249, 250)",
+        "count": 1
+      },
+      {
+        "value": "rgb(32, 33, 36)",
+        "count": 1
+      }
+    ]
+  },
+  "metadata": {
+    "targetUrl": "https://google.com/",
+    "analyzedAt": "2026-05-17T15:51:27.329Z",
+    "durationMs": 44099,
+    "viewportModes": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "diagnostics": {
+    "desktop": {
+      "viewport": "desktop",
+      "title": "Google",
+      "description": "",
+      "headingCount": 0,
+      "cards": 0,
+      "navCount": 0,
+      "stickyElements": 2,
+      "flexContainers": 49,
+      "gridContainers": 0,
+      "buttonCount": 17,
+      "formCount": 1,
+      "missingAltImages": 9,
+      "emptyLinks": 1,
+      "unlabeledButtons": 1,
+      "hasHorizontalOverflow": false,
+      "trustSignals": 1,
+      "conversionSignals": 0,
+      "animatedNodes": 0,
+      "contentLength": 179,
+      "typography": {
+        "fontFamilies": {
+          "Arial, sans-serif": 29,
+          "arial, sans-serif": 2,
+          "\"Google Sans Text\", Roboto, Helvetica, Arial, sans-serif": 2
+        },
+        "fontSizes": {
+          "14px": 22,
+          "13px": 11
+        }
+      },
+      "colors": {
+        "text": {
+          "rgb(31, 31, 31)": 20,
+          "rgb(255, 255, 255)": 2,
+          "rgb(0, 0, 0)": 1,
+          "rgb(32, 33, 36)": 1,
+          "rgb(26, 13, 171)": 9
+        },
+        "backgrounds": {
+          "rgba(0, 0, 0, 0)": 31,
+          "rgb(11, 87, 208)": 1,
+          "rgb(255, 255, 255)": 1
+        },
+        "borders": {
+          "rgb(31, 31, 31)": 20,
+          "rgb(255, 255, 255)": 2,
+          "rgb(248, 249, 250)": 1,
+          "rgb(32, 33, 36)": 1,
+          "rgb(26, 13, 171)": 9
+        }
+      }
+    },
+    "mobile": {
+      "viewport": "mobile",
+      "title": "Google",
+      "description": "",
+      "headingCount": 0,
+      "cards": 0,
+      "navCount": 0,
+      "stickyElements": 2,
+      "flexContainers": 49,
+      "gridContainers": 0,
+      "buttonCount": 17,
+      "formCount": 1,
+      "missingAltImages": 9,
+      "emptyLinks": 1,
+      "unlabeledButtons": 1,
+      "hasHorizontalOverflow": false,
+      "trustSignals": 1,
+      "conversionSignals": 0,
+      "animatedNodes": 0,
+      "contentLength": 179,
+      "typography": {
+        "fontFamilies": {
+          "Arial, sans-serif": 29,
+          "arial, sans-serif": 2,
+          "\"Google Sans Text\", Roboto, Helvetica, Arial, sans-serif": 2
+        },
+        "fontSizes": {
+          "14px": 22,
+          "13px": 11
+        }
+      },
+      "colors": {
+        "text": {
+          "rgb(232, 232, 232)": 12,
+          "rgb(227, 227, 227)": 2,
+          "rgb(0, 29, 53)": 2,
+          "rgb(0, 0, 0)": 1,
+          "rgb(232, 234, 237)": 1,
+          "rgb(153, 195, 255)": 9,
+          "rgb(255, 255, 255)": 6
+        },
+        "backgrounds": {
+          "rgba(0, 0, 0, 0)": 31,
+          "rgb(194, 231, 255)": 1,
+          "rgb(255, 255, 255)": 1
+        },
+        "borders": {
+          "rgb(232, 232, 232)": 12,
+          "rgb(227, 227, 227)": 2,
+          "rgb(0, 29, 53)": 2,
+          "rgb(248, 249, 250)": 1,
+          "rgb(232, 234, 237)": 1,
+          "rgb(153, 195, 255)": 9,
+          "rgb(255, 255, 255)": 6
+        }
+      }
+    },
+    "typographyTop": {
+      "families": [
+        {
+          "label": "Arial, sans-serif",
+          "count": 29
+        },
+        {
+          "label": "arial, sans-serif",
+          "count": 2
+        },
+        {
+          "label": "\"Google Sans Text\", Roboto, Helvetica, Arial, sans-serif",
+          "count": 2
+        }
+      ],
+      "scale": [
+        {
+          "label": "14px",
+          "count": 22
+        },
+        {
+          "label": "13px",
+          "count": 11
+        }
+      ]
+    },
+    "colorTop": [
+      {
+        "label": "rgb(31, 31, 31)",
+        "count": 20
+      },
+      {
+        "label": "rgb(26, 13, 171)",
+        "count": 9
+      },
+      {
+        "label": "rgb(255, 255, 255)",
+        "count": 2
+      },
+      {
+        "label": "rgb(0, 0, 0)",
+        "count": 1
+      },
+      {
+        "label": "rgb(32, 33, 36)",
+        "count": 1
+      }
+    ]
+  }
+}

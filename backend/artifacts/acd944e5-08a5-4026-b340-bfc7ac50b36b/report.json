@@ -1,0 +1,534 @@
+{
+  "executiveSummary": "Audit completed on https://instagram.com/. Overall score 72/100. Key opportunities center on consistency and component-system maturity, interaction design review, conversion optimization review.",
+  "overallScore": 72,
+  "strengths": [
+    "Brand and Design Identity Evaluation: Visual identity appears focused across typography and component styling.",
+    "Typography Analysis: Typography scale shows 4 frequent font-size steps in desktop mode.",
+    "Accessibility Review: Accessibility quality is scored using image alt coverage and interactive control labeling checks.",
+    "Mobile Responsiveness Review: Responsiveness is measured by mobile viewport rendering behavior and overflow indicators."
+  ],
+  "weaknesses": [
+    "Visual Hierarchy Analysis: Heading nodes detected: 0.",
+    "Layout and Grid Analysis: Desktop overflow detected: no.",
+    "Interaction Design Review: Forms detected: 1.",
+    "Conversion Optimization Review: Primary CTA opportunities detected: 2."
+  ],
+  "prioritizedRecommendations": [
+    "Convert repeated UI blocks into standardized component variants with token-driven theming.",
+    "Normalize hover, focus, and pressed states across all interactive controls.",
+    "Align hero CTA, mid-page CTA, and footer CTA messaging to one conversion path.",
+    "Ensure the first viewport communicates one dominant value proposition and one primary CTA.",
+    "Benchmark hero clarity and CTA confidence against category leaders quarterly.",
+    "Define consistent max-widths and gutter scales per breakpoint tier."
+  ],
+  "sections": [
+    {
+      "id": "brand-identity",
+      "title": "Brand and Design Identity Evaluation",
+      "score": 86,
+      "summary": "Visual identity appears focused across typography and component styling.",
+      "findings": [
+        "Detected 3 dominant font families in desktop rendering.",
+        "Top textual color tokens show 6 recurring values.",
+        "Navigation appears 0 time(s), indicating multiple navigation patterns."
+      ],
+      "recommendations": [
+        "Limit production typography to 2-3 font families with explicit role assignments.",
+        "Map recurring color tokens into a semantic design-token set (text, surface, action, status)."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "visual-hierarchy",
+      "title": "Visual Hierarchy Analysis",
+      "score": 62,
+      "summary": "Hierarchy strength is evaluated from heading structure density, card segmentation, and above-the-fold clarity.",
+      "findings": [
+        "Heading nodes detected: 0.",
+        "Card-like content clusters detected: 0.",
+        "Sticky/fixed framing elements found: 0."
+      ],
+      "recommendations": [
+        "Ensure the first viewport communicates one dominant value proposition and one primary CTA.",
+        "Reduce competing visual weights in parallel content blocks."
+      ],
+      "severity": "medium",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "typography",
+      "title": "Typography Analysis",
+      "score": 81,
+      "summary": "Typography scale shows 4 frequent font-size steps in desktop mode.",
+      "findings": [
+        "Most common families: \"Segoe UI Historic\", \"Segoe UI\", Helvetica, Arial, sans-serif (66) | Optimistic, \"Segoe UI Historic\", \"Segoe UI\", Helvetica, Arial, sans-serif (7) | \"Facebook Sans Normal\" (2).",
+        "Most common sizes: 15px (70) | 59.04px (2) | 12px (2) | 17px (1)."
+      ],
+      "recommendations": [
+        "Constrain heading/body/caption scale into a documented modular ratio.",
+        "Enforce readable body line length and minimum line-height for dense sections."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "color-psychology",
+      "title": "Color Psychology Analysis",
+      "score": 78,
+      "summary": "Detected 6 recurring text color values; palette cohesion influences trust and conversion confidence.",
+      "findings": [
+        "Top text colors: rgb(17, 17, 18) (35) | rgb(102, 106, 114) (33) | rgb(242, 244, 246) (2) | rgb(56, 88, 152) (2) | rgb(0, 100, 224) (2) | rgb(24, 119, 242) (1).",
+        "Animation-intense nodes: 0, which can alter perceived visual calmness."
+      ],
+      "recommendations": [
+        "Codify one high-attention CTA hue and reserve it for conversion-critical actions.",
+        "Audit contrast for secondary text against all major surface colors."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-cta",
+        "mobile-full",
+        "mobile-cta"
+      ]
+    },
+    {
+      "id": "layout-grid",
+      "title": "Layout and Grid Analysis",
+      "score": 68,
+      "summary": "Layout structure uses 0 grid and 105 flex containers in sampled nodes.",
+      "findings": [
+        "Desktop overflow detected: no.",
+        "Mobile overflow detected: no."
+      ],
+      "recommendations": [
+        "Define consistent max-widths and gutter scales per breakpoint tier.",
+        "Use grid for macro-layout and flex for local alignment to improve predictability."
+      ],
+      "severity": "medium",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "accessibility",
+      "title": "Accessibility Review",
+      "score": 88,
+      "summary": "Accessibility quality is scored using image alt coverage and interactive control labeling checks.",
+      "findings": [
+        "Images without useful alt text: 1.",
+        "Empty links detected: 0.",
+        "Buttons without accessible label text: 1."
+      ],
+      "recommendations": [
+        "Add meaningful alt text for informative images and empty alt for decorative assets.",
+        "Ensure every interactive control has visible or aria-based labeling."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "mobile-responsiveness",
+      "title": "Mobile Responsiveness Review",
+      "score": 88,
+      "summary": "Responsiveness is measured by mobile viewport rendering behavior and overflow indicators.",
+      "findings": [
+        "Mobile viewport configured at 390x844.",
+        "Mobile horizontal overflow: not detected."
+      ],
+      "recommendations": [
+        "Prioritize tap targets, spacing rhythm, and vertical content flow in mobile-first QA.",
+        "Validate all CTAs and forms in narrow viewport states."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "mobile-full",
+        "mobile-above-fold",
+        "mobile-form",
+        "mobile-cta"
+      ]
+    },
+    {
+      "id": "interaction-design",
+      "title": "Interaction Design Review",
+      "score": 60,
+      "summary": "Detected 2 interactive controls and 0 animated nodes.",
+      "findings": [
+        "Forms detected: 1.",
+        "Sticky/fixed interaction anchors: 0."
+      ],
+      "recommendations": [
+        "Normalize hover, focus, and pressed states across all interactive controls.",
+        "Ensure motion supports feedback clarity without delaying user intent."
+      ],
+      "severity": "high",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-cta",
+        "mobile-full",
+        "mobile-cta"
+      ]
+    },
+    {
+      "id": "conversion-optimization",
+      "title": "Conversion Optimization Review",
+      "score": 61,
+      "summary": "Conversion language indicators found: 1; trust indicators found: 2.",
+      "findings": [
+        "Primary CTA opportunities detected: 2.",
+        "Trust-oriented copy patterns detected: 2."
+      ],
+      "recommendations": [
+        "Align hero CTA, mid-page CTA, and footer CTA messaging to one conversion path.",
+        "Strengthen social proof and risk-reversal messaging near commitment actions."
+      ],
+      "severity": "high",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-cta",
+        "mobile-full",
+        "mobile-cta"
+      ]
+    },
+    {
+      "id": "ux-friction",
+      "title": "UX Friction Analysis",
+      "score": 88,
+      "summary": "Friction score combines accessibility defects, overflow behavior, and interaction dead-ends.",
+      "findings": [
+        "Empty link nodes: 0.",
+        "Unlabeled buttons: 1.",
+        "Mobile overflow status: no overflow detected."
+      ],
+      "recommendations": [
+        "Remove dead-end click targets and ensure every interaction yields visible feedback.",
+        "Resolve horizontal overflow and spacing collisions in narrow breakpoints."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "consistency-component-maturity",
+      "title": "Consistency and Component-System Maturity",
+      "score": 58,
+      "summary": "Component maturity is inferred from repeated card/button patterns and cross-section visual reuse.",
+      "findings": [
+        "Card-like modules detected: 0.",
+        "Button-like controls detected: 2."
+      ],
+      "recommendations": [
+        "Convert repeated UI blocks into standardized component variants with token-driven theming.",
+        "Audit variant sprawl and remove one-off button/card treatments."
+      ],
+      "severity": "medium",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "performance-modernity",
+      "title": "Performance Perception and Modernity Alignment",
+      "score": 69,
+      "summary": "Perceived performance is influenced by motion load, content density, and structural modern UI patterns.",
+      "findings": [
+        "Animated/transitioned nodes sampled: 0.",
+        "Primary content text length: 466 characters."
+      ],
+      "recommendations": [
+        "Use progressive reveal only where it supports comprehension, not decoration.",
+        "Balance visual modernity with motion restraint and predictable loading states."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "competitive-perception",
+      "title": "Competitive-Quality Perception",
+      "score": 67,
+      "summary": "Competitive quality is inferred from modern layout patterns, hierarchy clarity, and conversion confidence.",
+      "findings": [
+        "Modernity score: 60/100.",
+        "Hierarchy score: 62/100.",
+        "Conversion score: 61/100."
+      ],
+      "recommendations": [
+        "Benchmark hero clarity and CTA confidence against category leaders quarterly.",
+        "Prioritize visual differentiation in key conversion zones without sacrificing usability."
+      ],
+      "severity": "high",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "desktop-full",
+      "type": "full",
+      "label": "Full page (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/acd944e5-08a5-4026-b340-bfc7ac50b36b/desktop-full.png"
+    },
+    {
+      "id": "desktop-above-fold",
+      "type": "above-fold",
+      "label": "Above the fold (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/acd944e5-08a5-4026-b340-bfc7ac50b36b/desktop-above-fold.png"
+    },
+    {
+      "id": "desktop-form",
+      "type": "form",
+      "label": "Primary form (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/acd944e5-08a5-4026-b340-bfc7ac50b36b/desktop-form.png"
+    },
+    {
+      "id": "desktop-cta",
+      "type": "cta",
+      "label": "Call to action (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/acd944e5-08a5-4026-b340-bfc7ac50b36b/desktop-cta.png"
+    },
+    {
+      "id": "mobile-full",
+      "type": "full",
+      "label": "Full page (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/acd944e5-08a5-4026-b340-bfc7ac50b36b/mobile-full.png"
+    },
+    {
+      "id": "mobile-above-fold",
+      "type": "above-fold",
+      "label": "Above the fold (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/acd944e5-08a5-4026-b340-bfc7ac50b36b/mobile-above-fold.png"
+    },
+    {
+      "id": "mobile-form",
+      "type": "form",
+      "label": "Primary form (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/acd944e5-08a5-4026-b340-bfc7ac50b36b/mobile-form.png"
+    },
+    {
+      "id": "mobile-cta",
+      "type": "cta",
+      "label": "Call to action (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/acd944e5-08a5-4026-b340-bfc7ac50b36b/mobile-cta.png"
+    }
+  ],
+  "metadata": {
+    "targetUrl": "https://instagram.com/",
+    "analyzedAt": "2026-05-17T15:42:23.262Z",
+    "durationMs": 55543,
+    "viewportModes": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "diagnostics": {
+    "desktop": {
+      "viewport": "desktop",
+      "title": "Facebook",
+      "description": "",
+      "headingCount": 0,
+      "cards": 0,
+      "navCount": 0,
+      "stickyElements": 0,
+      "flexContainers": 105,
+      "gridContainers": 0,
+      "buttonCount": 2,
+      "formCount": 1,
+      "missingAltImages": 1,
+      "emptyLinks": 0,
+      "unlabeledButtons": 1,
+      "hasHorizontalOverflow": false,
+      "trustSignals": 2,
+      "conversionSignals": 1,
+      "animatedNodes": 0,
+      "contentLength": 466,
+      "typography": {
+        "fontFamilies": {
+          "\"Facebook Sans Normal\"": 2,
+          "Optimistic, \"Segoe UI Historic\", \"Segoe UI\", Helvetica, Arial, sans-serif": 7,
+          "\"Segoe UI Historic\", \"Segoe UI\", Helvetica, Arial, sans-serif": 66
+        },
+        "fontSizes": {
+          "59.04px": 2,
+          "17px": 1,
+          "15px": 70,
+          "12px": 2
+        }
+      },
+      "colors": {
+        "text": {
+          "rgb(17, 17, 18)": 35,
+          "rgb(24, 119, 242)": 1,
+          "rgb(242, 244, 246)": 2,
+          "rgb(56, 88, 152)": 2,
+          "rgb(0, 100, 224)": 2,
+          "rgb(102, 106, 114)": 33
+        },
+        "backgrounds": {
+          "rgba(0, 0, 0, 0)": 75
+        },
+        "borders": {
+          "rgb(17, 17, 18)": 35,
+          "rgb(24, 119, 242)": 1,
+          "rgb(242, 244, 246)": 2,
+          "rgb(56, 88, 152)": 2,
+          "rgb(0, 100, 224)": 2,
+          "rgb(102, 106, 114)": 33
+        }
+      }
+    },
+    "mobile": {
+      "viewport": "mobile",
+      "title": "Facebook",
+      "description": "",
+      "headingCount": 0,
+      "cards": 0,
+      "navCount": 0,
+      "stickyElements": 0,
+      "flexContainers": 103,
+      "gridContainers": 0,
+      "buttonCount": 2,
+      "formCount": 1,
+      "missingAltImages": 0,
+      "emptyLinks": 0,
+      "unlabeledButtons": 1,
+      "hasHorizontalOverflow": false,
+      "trustSignals": 2,
+      "conversionSignals": 1,
+      "animatedNodes": 0,
+      "contentLength": 437,
+      "typography": {
+        "fontFamilies": {
+          "Optimistic, \"Segoe UI Historic\", \"Segoe UI\", Helvetica, Arial, sans-serif": 7,
+          "\"Segoe UI Historic\", \"Segoe UI\", Helvetica, Arial, sans-serif": 66
+        },
+        "fontSizes": {
+          "17px": 1,
+          "15px": 70,
+          "12px": 2
+        }
+      },
+      "colors": {
+        "text": {
+          "rgb(17, 17, 18)": 34,
+          "rgb(242, 244, 246)": 2,
+          "rgb(56, 88, 152)": 2,
+          "rgb(0, 100, 224)": 2,
+          "rgb(102, 106, 114)": 33
+        },
+        "backgrounds": {
+          "rgba(0, 0, 0, 0)": 73
+        },
+        "borders": {
+          "rgb(17, 17, 18)": 34,
+          "rgb(242, 244, 246)": 2,
+          "rgb(56, 88, 152)": 2,
+          "rgb(0, 100, 224)": 2,
+          "rgb(102, 106, 114)": 33
+        }
+      }
+    },
+    "typographyTop": {
+      "families": [
+        {
+          "label": "\"Segoe UI Historic\", \"Segoe UI\", Helvetica, Arial, sans-serif",
+          "count": 66
+        },
+        {
+          "label": "Optimistic, \"Segoe UI Historic\", \"Segoe UI\", Helvetica, Arial, sans-serif",
+          "count": 7
+        },
+        {
+          "label": "\"Facebook Sans Normal\"",
+          "count": 2
+        }
+      ],
+      "scale": [
+        {
+          "label": "15px",
+          "count": 70
+        },
+        {
+          "label": "59.04px",
+          "count": 2
+        },
+        {
+          "label": "12px",
+          "count": 2
+        },
+        {
+          "label": "17px",
+          "count": 1
+        }
+      ]
+    },
+    "colorTop": [
+      {
+        "label": "rgb(17, 17, 18)",
+        "count": 35
+      },
+      {
+        "label": "rgb(102, 106, 114)",
+        "count": 33
+      },
+      {
+        "label": "rgb(242, 244, 246)",
+        "count": 2
+      },
+      {
+        "label": "rgb(56, 88, 152)",
+        "count": 2
+      },
+      {
+        "label": "rgb(0, 100, 224)",
+        "count": 2
+      },
+      {
+        "label": "rgb(24, 119, 242)",
+        "count": 1
+      }
+    ]
+  }
+}

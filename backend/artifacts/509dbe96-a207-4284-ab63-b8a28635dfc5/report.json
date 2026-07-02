@@ -1,0 +1,751 @@
+{
+  "executiveSummary": "Audit completed on https://craft.do/. Overall score 74/100. Key opportunities center on accessibility review, ux friction analysis, conversion optimization review.",
+  "overallScore": 74,
+  "strengths": [
+    "Brand and Design Identity Evaluation: Visual identity appears focused across typography and component styling.",
+    "Visual Hierarchy Analysis: Hierarchy strength is evaluated from heading structure density, card segmentation, and above-the-fold clarity.",
+    "Typography Analysis: Typography scale shows 6 frequent font-size steps in desktop mode.",
+    "Mobile Responsiveness Review: Responsiveness is measured by mobile viewport rendering behavior and overflow indicators."
+  ],
+  "weaknesses": [
+    "Accessibility Review: Images without useful alt text: 7.",
+    "Interaction Design Review: Forms detected: 0.",
+    "Conversion Optimization Review: Primary CTA opportunities detected: 16.",
+    "UX Friction Analysis: Empty link nodes: 25."
+  ],
+  "prioritizedRecommendations": [
+    "Add meaningful alt text for informative images and empty alt for decorative assets.",
+    "Remove dead-end click targets and ensure every interaction yields visible feedback.",
+    "Align hero CTA, mid-page CTA, and footer CTA messaging to one conversion path.",
+    "Normalize hover, focus, and pressed states across all interactive controls.",
+    "Define consistent max-widths and gutter scales per breakpoint tier.",
+    "Convert repeated UI blocks into standardized component variants with token-driven theming."
+  ],
+  "sections": [
+    {
+      "id": "brand-identity",
+      "title": "Brand and Design Identity Evaluation",
+      "score": 86,
+      "summary": "Visual identity appears focused across typography and component styling.",
+      "findings": [
+        "Detected 3 dominant font families in desktop rendering.",
+        "Top textual color tokens show 6 recurring values.",
+        "Navigation appears 2 time(s), indicating multiple navigation patterns."
+      ],
+      "recommendations": [
+        "Limit production typography to 2-3 font families with explicit role assignments.",
+        "Map recurring color tokens into a semantic design-token set (text, surface, action, status)."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-header",
+        "mobile-full",
+        "mobile-header"
+      ]
+    },
+    {
+      "id": "visual-hierarchy",
+      "title": "Visual Hierarchy Analysis",
+      "score": 88,
+      "summary": "Hierarchy strength is evaluated from heading structure density, card segmentation, and above-the-fold clarity.",
+      "findings": [
+        "Heading nodes detected: 44.",
+        "Card-like content clusters detected: 6.",
+        "Sticky/fixed framing elements found: 3."
+      ],
+      "recommendations": [
+        "Ensure the first viewport communicates one dominant value proposition and one primary CTA.",
+        "Reduce competing visual weights in parallel content blocks."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-main",
+        "mobile-full",
+        "mobile-main"
+      ]
+    },
+    {
+      "id": "typography",
+      "title": "Typography Analysis",
+      "score": 89,
+      "summary": "Typography scale shows 6 frequent font-size steps in desktop mode.",
+      "findings": [
+        "Most common families: UntitledSansFont, \"UntitledSansFont Fallback\", apple-system, InterFont, \"InterFont Fallback\", BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\" (299) | apple-system, InterFont, \"InterFont Fallback\", BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\" (99) | UntitledSerifFont, \"UntitledSerifFont Fallback\", apple-system-ui-serif, ui-serif, Georgia, \"serif\" (83).",
+        "Most common sizes: 16px (187) | 14px (47) | 18px (43) | 24px (42) | 15px (28) | 13px (25)."
+      ],
+      "recommendations": [
+        "Constrain heading/body/caption scale into a documented modular ratio.",
+        "Enforce readable body line length and minimum line-height for dense sections."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-main",
+        "mobile-full",
+        "mobile-main"
+      ]
+    },
+    {
+      "id": "color-psychology",
+      "title": "Color Psychology Analysis",
+      "score": 78,
+      "summary": "Detected 6 recurring text color values; palette cohesion influences trust and conversion confidence.",
+      "findings": [
+        "Top text colors: rgb(3, 3, 2) (224) | rgb(255, 255, 255) (122) | rgba(3, 3, 2, 0.75) (38) | rgba(3, 3, 2, 0.9) (28) | rgba(31, 34, 37, 0.8) (19) | rgba(3, 3, 2, 0.65) (15).",
+        "Animation-intense nodes: 0, which can alter perceived visual calmness."
+      ],
+      "recommendations": [
+        "Codify one high-attention CTA hue and reserve it for conversion-critical actions.",
+        "Audit contrast for secondary text against all major surface colors."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-cta",
+        "mobile-full",
+        "mobile-cta"
+      ]
+    },
+    {
+      "id": "layout-grid",
+      "title": "Layout and Grid Analysis",
+      "score": 70,
+      "summary": "Layout structure uses 6 grid and 265 flex containers in sampled nodes.",
+      "findings": [
+        "Desktop overflow detected: no.",
+        "Mobile overflow detected: no."
+      ],
+      "recommendations": [
+        "Define consistent max-widths and gutter scales per breakpoint tier.",
+        "Use grid for macro-layout and flex for local alignment to improve predictability."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "accessibility",
+      "title": "Accessibility Review",
+      "score": 27,
+      "summary": "Accessibility quality is scored using image alt coverage and interactive control labeling checks.",
+      "findings": [
+        "Images without useful alt text: 7.",
+        "Empty links detected: 25.",
+        "Buttons without accessible label text: 1."
+      ],
+      "recommendations": [
+        "Add meaningful alt text for informative images and empty alt for decorative assets.",
+        "Ensure every interactive control has visible or aria-based labeling."
+      ],
+      "severity": "high",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-main",
+        "mobile-full",
+        "mobile-main"
+      ]
+    },
+    {
+      "id": "mobile-responsiveness",
+      "title": "Mobile Responsiveness Review",
+      "score": 88,
+      "summary": "Responsiveness is measured by mobile viewport rendering behavior and overflow indicators.",
+      "findings": [
+        "Mobile viewport configured at 390x844.",
+        "Mobile horizontal overflow: not detected."
+      ],
+      "recommendations": [
+        "Prioritize tap targets, spacing rhythm, and vertical content flow in mobile-first QA.",
+        "Validate all CTAs and forms in narrow viewport states."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "mobile-full",
+        "mobile-above-fold",
+        "mobile-header",
+        "mobile-main",
+        "mobile-footer",
+        "mobile-cards",
+        "mobile-cta"
+      ]
+    },
+    {
+      "id": "interaction-design",
+      "title": "Interaction Design Review",
+      "score": 69,
+      "summary": "Detected 16 interactive controls and 0 animated nodes.",
+      "findings": [
+        "Forms detected: 0.",
+        "Sticky/fixed interaction anchors: 3."
+      ],
+      "recommendations": [
+        "Normalize hover, focus, and pressed states across all interactive controls.",
+        "Ensure motion supports feedback clarity without delaying user intent."
+      ],
+      "severity": "medium",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-cta",
+        "mobile-full",
+        "mobile-cta"
+      ]
+    },
+    {
+      "id": "conversion-optimization",
+      "title": "Conversion Optimization Review",
+      "score": 68,
+      "summary": "Conversion language indicators found: 2; trust indicators found: 3.",
+      "findings": [
+        "Primary CTA opportunities detected: 16.",
+        "Trust-oriented copy patterns detected: 3."
+      ],
+      "recommendations": [
+        "Align hero CTA, mid-page CTA, and footer CTA messaging to one conversion path.",
+        "Strengthen social proof and risk-reversal messaging near commitment actions."
+      ],
+      "severity": "medium",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-cta",
+        "mobile-full",
+        "mobile-cta"
+      ]
+    },
+    {
+      "id": "ux-friction",
+      "title": "UX Friction Analysis",
+      "score": 38,
+      "summary": "Friction score combines accessibility defects, overflow behavior, and interaction dead-ends.",
+      "findings": [
+        "Empty link nodes: 25.",
+        "Unlabeled buttons: 1.",
+        "Mobile overflow status: no overflow detected."
+      ],
+      "recommendations": [
+        "Remove dead-end click targets and ensure every interaction yields visible feedback.",
+        "Resolve horizontal overflow and spacing collisions in narrow breakpoints."
+      ],
+      "severity": "high",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-main",
+        "mobile-full",
+        "mobile-main"
+      ]
+    },
+    {
+      "id": "consistency-component-maturity",
+      "title": "Consistency and Component-System Maturity",
+      "score": 72,
+      "summary": "Component maturity is inferred from repeated card/button patterns and cross-section visual reuse.",
+      "findings": [
+        "Card-like modules detected: 6.",
+        "Button-like controls detected: 16."
+      ],
+      "recommendations": [
+        "Convert repeated UI blocks into standardized component variants with token-driven theming.",
+        "Audit variant sprawl and remove one-off button/card treatments."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-cards",
+        "mobile-full",
+        "mobile-cards"
+      ]
+    },
+    {
+      "id": "performance-modernity",
+      "title": "Performance Perception and Modernity Alignment",
+      "score": 75,
+      "summary": "Perceived performance is influenced by motion load, content density, and structural modern UI patterns.",
+      "findings": [
+        "Animated/transitioned nodes sampled: 0.",
+        "Primary content text length: 5914 characters."
+      ],
+      "recommendations": [
+        "Use progressive reveal only where it supports comprehension, not decoration.",
+        "Balance visual modernity with motion restraint and predictable loading states."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "competitive-perception",
+      "title": "Competitive-Quality Perception",
+      "score": 78,
+      "summary": "Competitive quality is inferred from modern layout patterns, hierarchy clarity, and conversion confidence.",
+      "findings": [
+        "Modernity score: 71/100.",
+        "Hierarchy score: 88/100.",
+        "Conversion score: 68/100."
+      ],
+      "recommendations": [
+        "Benchmark hero clarity and CTA confidence against category leaders quarterly.",
+        "Prioritize visual differentiation in key conversion zones without sacrificing usability."
+      ],
+      "severity": "medium",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "desktop-full",
+      "type": "full",
+      "label": "Full page (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/509dbe96-a207-4284-ab63-b8a28635dfc5/desktop-full.png"
+    },
+    {
+      "id": "desktop-above-fold",
+      "type": "above-fold",
+      "label": "Above the fold (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/509dbe96-a207-4284-ab63-b8a28635dfc5/desktop-above-fold.png"
+    },
+    {
+      "id": "desktop-header",
+      "type": "header",
+      "label": "Header (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/509dbe96-a207-4284-ab63-b8a28635dfc5/desktop-header.png"
+    },
+    {
+      "id": "desktop-main",
+      "type": "main",
+      "label": "Main content (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/509dbe96-a207-4284-ab63-b8a28635dfc5/desktop-main.png"
+    },
+    {
+      "id": "desktop-footer",
+      "type": "footer",
+      "label": "Footer (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/509dbe96-a207-4284-ab63-b8a28635dfc5/desktop-footer.png"
+    },
+    {
+      "id": "desktop-cards",
+      "type": "cards",
+      "label": "Card pattern (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/509dbe96-a207-4284-ab63-b8a28635dfc5/desktop-cards.png"
+    },
+    {
+      "id": "desktop-cta",
+      "type": "cta",
+      "label": "Call to action (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/509dbe96-a207-4284-ab63-b8a28635dfc5/desktop-cta.png"
+    },
+    {
+      "id": "mobile-full",
+      "type": "full",
+      "label": "Full page (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/509dbe96-a207-4284-ab63-b8a28635dfc5/mobile-full.png"
+    },
+    {
+      "id": "mobile-above-fold",
+      "type": "above-fold",
+      "label": "Above the fold (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/509dbe96-a207-4284-ab63-b8a28635dfc5/mobile-above-fold.png"
+    },
+    {
+      "id": "mobile-header",
+      "type": "header",
+      "label": "Header (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/509dbe96-a207-4284-ab63-b8a28635dfc5/mobile-header.png"
+    },
+    {
+      "id": "mobile-main",
+      "type": "main",
+      "label": "Main content (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/509dbe96-a207-4284-ab63-b8a28635dfc5/mobile-main.png"
+    },
+    {
+      "id": "mobile-footer",
+      "type": "footer",
+      "label": "Footer (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/509dbe96-a207-4284-ab63-b8a28635dfc5/mobile-footer.png"
+    },
+    {
+      "id": "mobile-cards",
+      "type": "cards",
+      "label": "Card pattern (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/509dbe96-a207-4284-ab63-b8a28635dfc5/mobile-cards.png"
+    },
+    {
+      "id": "mobile-cta",
+      "type": "cta",
+      "label": "Call to action (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/509dbe96-a207-4284-ab63-b8a28635dfc5/mobile-cta.png"
+    }
+  ],
+  "colorPaletteScheme": {
+    "summary": "Detected 6 dominant text colors, 7 surface colors, and 2 accent/border colors.",
+    "roles": [
+      {
+        "role": "Primary text",
+        "value": "rgb(3, 3, 2)"
+      },
+      {
+        "role": "Secondary text",
+        "value": "rgb(255, 255, 255)"
+      },
+      {
+        "role": "Primary surface",
+        "value": "oklab(0.0959089 -0.00155481 0.00499368 / 0.8)"
+      },
+      {
+        "role": "Secondary surface",
+        "value": "rgba(0, 0, 0, 0.04)"
+      },
+      {
+        "role": "Accent / CTA",
+        "value": "rgba(3, 3, 2, 0.09)"
+      }
+    ],
+    "textPalette": [
+      {
+        "value": "rgb(3, 3, 2)",
+        "count": 224
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 122
+      },
+      {
+        "value": "rgba(3, 3, 2, 0.75)",
+        "count": 38
+      },
+      {
+        "value": "rgba(3, 3, 2, 0.9)",
+        "count": 28
+      },
+      {
+        "value": "rgba(31, 34, 37, 0.8)",
+        "count": 19
+      },
+      {
+        "value": "rgba(3, 3, 2, 0.65)",
+        "count": 15
+      }
+    ],
+    "surfacePalette": [
+      {
+        "value": "oklab(0.0959089 -0.00155481 0.00499368 / 0.8)",
+        "count": 16
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.04)",
+        "count": 12
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.08)",
+        "count": 8
+      },
+      {
+        "value": "rgb(155, 216, 169)",
+        "count": 8
+      },
+      {
+        "value": "rgb(3, 3, 2)",
+        "count": 4
+      },
+      {
+        "value": "rgb(219, 237, 254)",
+        "count": 2
+      },
+      {
+        "value": "rgb(47, 122, 67)",
+        "count": 1
+      }
+    ],
+    "accentPalette": [
+      {
+        "value": "rgba(3, 3, 2, 0.09)",
+        "count": 477
+      },
+      {
+        "value": "oklab(1 0 5.96046e-8 / 0.3)",
+        "count": 4
+      }
+    ]
+  },
+  "metadata": {
+    "targetUrl": "https://craft.do/",
+    "analyzedAt": "2026-05-17T15:57:49.367Z",
+    "durationMs": 55876,
+    "viewportModes": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "diagnostics": {
+    "desktop": {
+      "viewport": "desktop",
+      "title": "Craft — Productivity App for Notes, Tasks, and Docs",
+      "description": "A free notes and productivity app that follows you across all your devices. Premium features available.",
+      "headingCount": 44,
+      "cards": 6,
+      "navCount": 2,
+      "stickyElements": 3,
+      "flexContainers": 265,
+      "gridContainers": 6,
+      "buttonCount": 16,
+      "formCount": 0,
+      "missingAltImages": 7,
+      "emptyLinks": 25,
+      "unlabeledButtons": 1,
+      "hasHorizontalOverflow": false,
+      "trustSignals": 3,
+      "conversionSignals": 2,
+      "animatedNodes": 0,
+      "contentLength": 5914,
+      "typography": {
+        "fontFamilies": {
+          "UntitledSansFont, \"UntitledSansFont Fallback\", apple-system, InterFont, \"InterFont Fallback\", BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"": 299,
+          "UntitledSerifFont, \"UntitledSerifFont Fallback\", apple-system-ui-serif, ui-serif, Georgia, \"serif\"": 83,
+          "apple-system, InterFont, \"InterFont Fallback\", BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"": 99
+        },
+        "fontSizes": {
+          "16px": 187,
+          "20px": 23,
+          "13px": 25,
+          "66px": 1,
+          "46px": 15,
+          "54px": 8,
+          "24px": 42,
+          "36px": 5,
+          "18px": 43,
+          "12px": 23,
+          "15px": 28,
+          "32px": 8,
+          "10px": 16,
+          "14px": 47,
+          "19px": 2,
+          "9.5px": 2,
+          "28px": 3,
+          "30px": 2,
+          "56px": 1
+        }
+      },
+      "colors": {
+        "text": {
+          "rgba(3, 3, 2, 0.75)": 38,
+          "rgb(255, 255, 255)": 122,
+          "rgb(3, 3, 2)": 224,
+          "rgba(3, 3, 2, 0.9)": 28,
+          "rgba(31, 34, 37, 0.6)": 12,
+          "rgba(3, 3, 2, 0.5)": 7,
+          "rgba(3, 3, 2, 0.65)": 15,
+          "rgb(0, 135, 255)": 6,
+          "rgba(17, 17, 17, 0.3)": 2,
+          "rgba(3, 3, 2, 0.25)": 2,
+          "rgba(31, 34, 37, 0.8)": 19,
+          "rgba(31, 34, 37, 0.5)": 4,
+          "oklab(1 0 5.96046e-8 / 0.6)": 1,
+          "rgba(0, 0, 0, 0)": 1
+        },
+        "backgrounds": {
+          "rgb(47, 122, 67)": 1,
+          "rgba(0, 0, 0, 0)": 427,
+          "rgb(3, 3, 2)": 4,
+          "rgba(0, 0, 0, 0.08)": 8,
+          "rgba(0, 0, 0, 0.04)": 12,
+          "oklab(0.0959089 -0.00155481 0.00499368 / 0.8)": 16,
+          "rgb(155, 216, 169)": 8,
+          "oklab(1 0 5.96046e-8 / 0.9)": 1,
+          "rgb(219, 237, 254)": 2,
+          "rgb(255, 255, 255)": 1,
+          "oklab(1 0 5.96046e-8 / 0.4)": 1
+        },
+        "borders": {
+          "rgba(3, 3, 2, 0.09)": 477,
+          "oklab(1 0 5.96046e-8 / 0.3)": 4
+        }
+      }
+    },
+    "mobile": {
+      "viewport": "mobile",
+      "title": "Craft — Productivity App for Notes, Tasks, and Docs",
+      "description": "A free notes and productivity app that follows you across all your devices. Premium features available.",
+      "headingCount": 55,
+      "cards": 6,
+      "navCount": 3,
+      "stickyElements": 2,
+      "flexContainers": 183,
+      "gridContainers": 5,
+      "buttonCount": 18,
+      "formCount": 0,
+      "missingAltImages": 7,
+      "emptyLinks": 25,
+      "unlabeledButtons": 1,
+      "hasHorizontalOverflow": false,
+      "trustSignals": 2,
+      "conversionSignals": 2,
+      "animatedNodes": 0,
+      "contentLength": 5550,
+      "typography": {
+        "fontFamilies": {
+          "UntitledSansFont, \"UntitledSansFont Fallback\", apple-system, InterFont, \"InterFont Fallback\", BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"": 347,
+          "UntitledSerifFont, \"UntitledSerifFont Fallback\", apple-system-ui-serif, ui-serif, Georgia, \"serif\"": 83,
+          "apple-system, InterFont, \"InterFont Fallback\", BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"": 99
+        },
+        "fontSizes": {
+          "16px": 196,
+          "17px": 31,
+          "13px": 25,
+          "15px": 48,
+          "14px": 68,
+          "48px": 1,
+          "36px": 15,
+          "38px": 8,
+          "24px": 56,
+          "12px": 23,
+          "20px": 6,
+          "18px": 29,
+          "10px": 16,
+          "9.5px": 2,
+          "26px": 3,
+          "40px": 1,
+          "28px": 1
+        }
+      },
+      "colors": {
+        "text": {
+          "rgba(3, 3, 2, 0.75)": 50,
+          "rgb(255, 255, 255)": 124,
+          "rgb(3, 3, 2)": 251,
+          "rgba(3, 3, 2, 0.5)": 14,
+          "rgba(3, 3, 2, 0.9)": 28,
+          "rgba(31, 34, 37, 0.6)": 12,
+          "rgba(3, 3, 2, 0.65)": 15,
+          "rgb(0, 135, 255)": 6,
+          "rgba(17, 17, 17, 0.3)": 2,
+          "rgba(3, 3, 2, 0.25)": 2,
+          "rgba(31, 34, 37, 0.8)": 19,
+          "rgba(31, 34, 37, 0.5)": 4,
+          "oklab(1 0 5.96046e-8 / 0.6)": 1,
+          "rgba(0, 0, 0, 0)": 1
+        },
+        "backgrounds": {
+          "rgb(47, 122, 67)": 1,
+          "rgba(0, 0, 0, 0)": 468,
+          "rgb(3, 3, 2)": 5,
+          "oklab(1 0 5.96046e-8 / 0.5)": 6,
+          "rgba(0, 0, 0, 0.08)": 8,
+          "rgba(0, 0, 0, 0.04)": 12,
+          "oklab(0.0959089 -0.00155481 0.00499368 / 0.8)": 16,
+          "rgb(155, 216, 169)": 8,
+          "oklab(1 0 5.96046e-8 / 0.9)": 1,
+          "rgb(219, 237, 254)": 2,
+          "rgb(255, 255, 255)": 1,
+          "oklab(1 0 5.96046e-8 / 0.4)": 1
+        },
+        "borders": {
+          "rgba(3, 3, 2, 0.09)": 525,
+          "oklab(1 0 5.96046e-8 / 0.3)": 4
+        }
+      }
+    },
+    "typographyTop": {
+      "families": [
+        {
+          "label": "UntitledSansFont, \"UntitledSansFont Fallback\", apple-system, InterFont, \"InterFont Fallback\", BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+          "count": 299
+        },
+        {
+          "label": "apple-system, InterFont, \"InterFont Fallback\", BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+          "count": 99
+        },
+        {
+          "label": "UntitledSerifFont, \"UntitledSerifFont Fallback\", apple-system-ui-serif, ui-serif, Georgia, \"serif\"",
+          "count": 83
+        }
+      ],
+      "scale": [
+        {
+          "label": "16px",
+          "count": 187
+        },
+        {
+          "label": "14px",
+          "count": 47
+        },
+        {
+          "label": "18px",
+          "count": 43
+        },
+        {
+          "label": "24px",
+          "count": 42
+        },
+        {
+          "label": "15px",
+          "count": 28
+        },
+        {
+          "label": "13px",
+          "count": 25
+        }
+      ]
+    },
+    "colorTop": [
+      {
+        "label": "rgb(3, 3, 2)",
+        "count": 224
+      },
+      {
+        "label": "rgb(255, 255, 255)",
+        "count": 122
+      },
+      {
+        "label": "rgba(3, 3, 2, 0.75)",
+        "count": 38
+      },
+      {
+        "label": "rgba(3, 3, 2, 0.9)",
+        "count": 28
+      },
+      {
+        "label": "rgba(31, 34, 37, 0.8)",
+        "count": 19
+      },
+      {
+        "label": "rgba(3, 3, 2, 0.65)",
+        "count": 15
+      }
+    ]
+  }
+}

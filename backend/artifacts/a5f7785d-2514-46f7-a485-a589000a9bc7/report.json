@@ -1,0 +1,606 @@
+{
+  "executiveSummary": "Audit completed on https://yuvrajmishra.online/. Overall score 78/100. Key opportunities center on conversion optimization review, layout and grid analysis, interaction design review.",
+  "overallScore": 78,
+  "strengths": [
+    "Brand and Design Identity Evaluation: Visual identity appears focused across typography and component styling.",
+    "Visual Hierarchy Analysis: Hierarchy strength is evaluated from heading structure density, card segmentation, and above-the-fold clarity.",
+    "Typography Analysis: Typography scale shows 6 frequent font-size steps in desktop mode.",
+    "Accessibility Review: Accessibility quality is scored using image alt coverage and interactive control labeling checks."
+  ],
+  "weaknesses": [
+    "Layout and Grid Analysis: Desktop overflow detected: no.",
+    "Conversion Optimization Review: Primary CTA opportunities detected: 15."
+  ],
+  "prioritizedRecommendations": [
+    "Align hero CTA, mid-page CTA, and footer CTA messaging to one conversion path.",
+    "Define consistent max-widths and gutter scales per breakpoint tier.",
+    "Normalize hover, focus, and pressed states across all interactive controls.",
+    "Convert repeated UI blocks into standardized component variants with token-driven theming.",
+    "Use progressive reveal only where it supports comprehension, not decoration.",
+    "Benchmark hero clarity and CTA confidence against category leaders quarterly."
+  ],
+  "sections": [
+    {
+      "id": "brand-identity",
+      "title": "Brand and Design Identity Evaluation",
+      "score": 86,
+      "summary": "Visual identity appears focused across typography and component styling.",
+      "findings": [
+        "Detected 3 dominant font families in desktop rendering.",
+        "Top textual color tokens show 6 recurring values.",
+        "Navigation appears 2 time(s), indicating multiple navigation patterns."
+      ],
+      "recommendations": [
+        "Limit production typography to 2-3 font families with explicit role assignments.",
+        "Map recurring color tokens into a semantic design-token set (text, surface, action, status)."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "visual-hierarchy",
+      "title": "Visual Hierarchy Analysis",
+      "score": 88,
+      "summary": "Hierarchy strength is evaluated from heading structure density, card segmentation, and above-the-fold clarity.",
+      "findings": [
+        "Heading nodes detected: 19.",
+        "Card-like content clusters detected: 6.",
+        "Sticky/fixed framing elements found: 9."
+      ],
+      "recommendations": [
+        "Ensure the first viewport communicates one dominant value proposition and one primary CTA.",
+        "Reduce competing visual weights in parallel content blocks."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "typography",
+      "title": "Typography Analysis",
+      "score": 89,
+      "summary": "Typography scale shows 6 frequent font-size steps in desktop mode.",
+      "findings": [
+        "Most common families: \"IBM Plex Mono\", monospace (104) | ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\" (66) | Niconne, cursive (8).",
+        "Most common sizes: 14px (59) | 15px (40) | 12px (28) | 16px (14) | 20px (10) | 36px (5)."
+      ],
+      "recommendations": [
+        "Constrain heading/body/caption scale into a documented modular ratio.",
+        "Enforce readable body line length and minimum line-height for dense sections."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "color-psychology",
+      "title": "Color Psychology Analysis",
+      "score": 78,
+      "summary": "Detected 6 recurring text color values; palette cohesion influences trust and conversion confidence.",
+      "findings": [
+        "Top text colors: oklab(0.999994 0.0000455678 0.0000200868 / 0.75) (36) | oklab(0.999994 0.0000455677 0.0000200868 / 0.6) (34) | rgb(255, 255, 255) (31) | oklab(0.999994 0.0000455677 0.0000200868 / 0.8) (25) | oklab(0.999994 0.0000455678 0.0000200868 / 0.4) (12) | oklab(0.999994 0.0000455677 0.0000200868 / 0.7) (11).",
+        "Animation-intense nodes: 4, which can alter perceived visual calmness."
+      ],
+      "recommendations": [
+        "Codify one high-attention CTA hue and reserve it for conversion-critical actions.",
+        "Audit contrast for secondary text against all major surface colors."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "layout-grid",
+      "title": "Layout and Grid Analysis",
+      "score": 67,
+      "summary": "Layout structure uses 5 grid and 62 flex containers in sampled nodes.",
+      "findings": [
+        "Desktop overflow detected: no.",
+        "Mobile overflow detected: no."
+      ],
+      "recommendations": [
+        "Define consistent max-widths and gutter scales per breakpoint tier.",
+        "Use grid for macro-layout and flex for local alignment to improve predictability."
+      ],
+      "severity": "medium",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "accessibility",
+      "title": "Accessibility Review",
+      "score": 86,
+      "summary": "Accessibility quality is scored using image alt coverage and interactive control labeling checks.",
+      "findings": [
+        "Images without useful alt text: 0.",
+        "Empty links detected: 3.",
+        "Buttons without accessible label text: 0."
+      ],
+      "recommendations": [
+        "Add meaningful alt text for informative images and empty alt for decorative assets.",
+        "Ensure every interactive control has visible or aria-based labeling."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "mobile-responsiveness",
+      "title": "Mobile Responsiveness Review",
+      "score": 88,
+      "summary": "Responsiveness is measured by mobile viewport rendering behavior and overflow indicators.",
+      "findings": [
+        "Mobile viewport configured at 390x844.",
+        "Mobile horizontal overflow: not detected."
+      ],
+      "recommendations": [
+        "Prioritize tap targets, spacing rhythm, and vertical content flow in mobile-first QA.",
+        "Validate all CTAs and forms in narrow viewport states."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "mobile-full",
+        "mobile-above-fold",
+        "mobile-navigation",
+        "mobile-footer",
+        "mobile-form"
+      ]
+    },
+    {
+      "id": "interaction-design",
+      "title": "Interaction Design Review",
+      "score": 70,
+      "summary": "Detected 15 interactive controls and 4 animated nodes.",
+      "findings": [
+        "Forms detected: 1.",
+        "Sticky/fixed interaction anchors: 9."
+      ],
+      "recommendations": [
+        "Normalize hover, focus, and pressed states across all interactive controls.",
+        "Ensure motion supports feedback clarity without delaying user intent."
+      ],
+      "severity": "medium",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "conversion-optimization",
+      "title": "Conversion Optimization Review",
+      "score": 58,
+      "summary": "Conversion language indicators found: 0; trust indicators found: 3.",
+      "findings": [
+        "Primary CTA opportunities detected: 15.",
+        "Trust-oriented copy patterns detected: 3."
+      ],
+      "recommendations": [
+        "Align hero CTA, mid-page CTA, and footer CTA messaging to one conversion path.",
+        "Strengthen social proof and risk-reversal messaging near commitment actions."
+      ],
+      "severity": "high",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "ux-friction",
+      "title": "UX Friction Analysis",
+      "score": 82,
+      "summary": "Friction score combines accessibility defects, overflow behavior, and interaction dead-ends.",
+      "findings": [
+        "Empty link nodes: 3.",
+        "Unlabeled buttons: 0.",
+        "Mobile overflow status: no overflow detected."
+      ],
+      "recommendations": [
+        "Remove dead-end click targets and ensure every interaction yields visible feedback.",
+        "Resolve horizontal overflow and spacing collisions in narrow breakpoints."
+      ],
+      "severity": "low",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "consistency-component-maturity",
+      "title": "Consistency and Component-System Maturity",
+      "score": 71,
+      "summary": "Component maturity is inferred from repeated card/button patterns and cross-section visual reuse.",
+      "findings": [
+        "Card-like modules detected: 6.",
+        "Button-like controls detected: 15."
+      ],
+      "recommendations": [
+        "Convert repeated UI blocks into standardized component variants with token-driven theming.",
+        "Audit variant sprawl and remove one-off button/card treatments."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "desktop-cards",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "performance-modernity",
+      "title": "Performance Perception and Modernity Alignment",
+      "score": 76,
+      "summary": "Perceived performance is influenced by motion load, content density, and structural modern UI patterns.",
+      "findings": [
+        "Animated/transitioned nodes sampled: 4.",
+        "Primary content text length: 2825 characters."
+      ],
+      "recommendations": [
+        "Use progressive reveal only where it supports comprehension, not decoration.",
+        "Balance visual modernity with motion restraint and predictable loading states."
+      ],
+      "severity": "low",
+      "impact": "medium",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    },
+    {
+      "id": "competitive-perception",
+      "title": "Competitive-Quality Perception",
+      "score": 76,
+      "summary": "Competitive quality is inferred from modern layout patterns, hierarchy clarity, and conversion confidence.",
+      "findings": [
+        "Modernity score: 73/100.",
+        "Hierarchy score: 88/100.",
+        "Conversion score: 58/100."
+      ],
+      "recommendations": [
+        "Benchmark hero clarity and CTA confidence against category leaders quarterly.",
+        "Prioritize visual differentiation in key conversion zones without sacrificing usability."
+      ],
+      "severity": "medium",
+      "impact": "high",
+      "evidenceIds": [
+        "desktop-full",
+        "mobile-full"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "desktop-full",
+      "type": "full",
+      "label": "Full page (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/a5f7785d-2514-46f7-a485-a589000a9bc7/desktop-full.png"
+    },
+    {
+      "id": "desktop-above-fold",
+      "type": "above-fold",
+      "label": "Above the fold (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/a5f7785d-2514-46f7-a485-a589000a9bc7/desktop-above-fold.png"
+    },
+    {
+      "id": "desktop-navigation",
+      "type": "navigation",
+      "label": "Navigation (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/a5f7785d-2514-46f7-a485-a589000a9bc7/desktop-navigation.png"
+    },
+    {
+      "id": "desktop-footer",
+      "type": "footer",
+      "label": "Footer (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/a5f7785d-2514-46f7-a485-a589000a9bc7/desktop-footer.png"
+    },
+    {
+      "id": "desktop-form",
+      "type": "form",
+      "label": "Primary form (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/a5f7785d-2514-46f7-a485-a589000a9bc7/desktop-form.png"
+    },
+    {
+      "id": "desktop-cards",
+      "type": "cards",
+      "label": "Card pattern (desktop)",
+      "viewport": "desktop",
+      "path": "/artifacts/a5f7785d-2514-46f7-a485-a589000a9bc7/desktop-cards.png"
+    },
+    {
+      "id": "mobile-full",
+      "type": "full",
+      "label": "Full page (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/a5f7785d-2514-46f7-a485-a589000a9bc7/mobile-full.png"
+    },
+    {
+      "id": "mobile-above-fold",
+      "type": "above-fold",
+      "label": "Above the fold (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/a5f7785d-2514-46f7-a485-a589000a9bc7/mobile-above-fold.png"
+    },
+    {
+      "id": "mobile-navigation",
+      "type": "navigation",
+      "label": "Navigation (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/a5f7785d-2514-46f7-a485-a589000a9bc7/mobile-navigation.png"
+    },
+    {
+      "id": "mobile-footer",
+      "type": "footer",
+      "label": "Footer (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/a5f7785d-2514-46f7-a485-a589000a9bc7/mobile-footer.png"
+    },
+    {
+      "id": "mobile-form",
+      "type": "form",
+      "label": "Primary form (mobile)",
+      "viewport": "mobile",
+      "path": "/artifacts/a5f7785d-2514-46f7-a485-a589000a9bc7/mobile-form.png"
+    }
+  ],
+  "metadata": {
+    "targetUrl": "https://yuvrajmishra.online/",
+    "analyzedAt": "2026-05-17T15:20:52.529Z",
+    "durationMs": 49219,
+    "viewportModes": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "diagnostics": {
+    "desktop": {
+      "viewport": "desktop",
+      "title": "Yuvraj Mishra - Web artist & Full Stack Developer",
+      "description": "Aspiring Full Stack Developer with hands-on experience in the MERN stack (MongoDB, Express.js, React, Node.js), RESTful APIs, and responsive design. Proven ability to build user-centric applications and optimize for performance and SEO.",
+      "headingCount": 19,
+      "cards": 6,
+      "navCount": 2,
+      "stickyElements": 9,
+      "flexContainers": 62,
+      "gridContainers": 5,
+      "buttonCount": 15,
+      "formCount": 1,
+      "missingAltImages": 0,
+      "emptyLinks": 3,
+      "unlabeledButtons": 0,
+      "hasHorizontalOverflow": false,
+      "trustSignals": 3,
+      "conversionSignals": 0,
+      "animatedNodes": 4,
+      "contentLength": 2825,
+      "typography": {
+        "fontFamilies": {
+          "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"": 66,
+          "Niconne, cursive": 8,
+          "\"IBM Plex Mono\", monospace": 104
+        },
+        "fontSizes": {
+          "14px": 59,
+          "24px": 4,
+          "15px": 40,
+          "20px": 10,
+          "96px": 4,
+          "72px": 4,
+          "16px": 14,
+          "60px": 1,
+          "30px": 4,
+          "18px": 4,
+          "36px": 5,
+          "12px": 28,
+          "48px": 1
+        }
+      },
+      "colors": {
+        "text": {
+          "rgb(255, 255, 255)": 31,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.75)": 36,
+          "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)": 11,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.95)": 1,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.9)": 9,
+          "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)": 25,
+          "rgb(0, 0, 0)": 7,
+          "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)": 34,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)": 8,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.4)": 12,
+          "oklab(0.704006 0.176798 0.0722319 / 0.7)": 4
+        },
+        "backgrounds": {
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.1)": 1,
+          "rgba(0, 0, 0, 0)": 156,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.95)": 2,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)": 19
+        },
+        "borders": {
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.1)": 17,
+          "rgb(255, 255, 255)": 29,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.75)": 36,
+          "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)": 11,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.95)": 1,
+          "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)": 28,
+          "rgb(0, 0, 0)": 6,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.9)": 8,
+          "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)": 18,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)": 8,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.4)": 12,
+          "oklab(0.704006 0.176798 0.0722319 / 0.7)": 4
+        }
+      }
+    },
+    "mobile": {
+      "viewport": "mobile",
+      "title": "Yuvraj Mishra - Web artist & Full Stack Developer",
+      "description": "Aspiring Full Stack Developer with hands-on experience in the MERN stack (MongoDB, Express.js, React, Node.js), RESTful APIs, and responsive design. Proven ability to build user-centric applications and optimize for performance and SEO.",
+      "headingCount": 18,
+      "cards": 6,
+      "navCount": 2,
+      "stickyElements": 8,
+      "flexContainers": 59,
+      "gridContainers": 5,
+      "buttonCount": 15,
+      "formCount": 1,
+      "missingAltImages": 0,
+      "emptyLinks": 3,
+      "unlabeledButtons": 0,
+      "hasHorizontalOverflow": false,
+      "trustSignals": 3,
+      "conversionSignals": 0,
+      "animatedNodes": 4,
+      "contentLength": 2773,
+      "typography": {
+        "fontFamilies": {
+          "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"": 65,
+          "Niconne, cursive": 8,
+          "\"IBM Plex Mono\", monospace": 103
+        },
+        "fontSizes": {
+          "14px": 25,
+          "24px": 10,
+          "15px": 40,
+          "12px": 60,
+          "36px": 3,
+          "16px": 5,
+          "13px": 3,
+          "48px": 3,
+          "20px": 4,
+          "30px": 1,
+          "18px": 4,
+          "10px": 18
+        }
+      },
+      "colors": {
+        "text": {
+          "rgb(255, 255, 255)": 29,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.75)": 36,
+          "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)": 11,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.95)": 1,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.9)": 9,
+          "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)": 25,
+          "rgb(0, 0, 0)": 7,
+          "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)": 34,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)": 8,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.4)": 12,
+          "oklab(0.704006 0.176798 0.0722319 / 0.7)": 4
+        },
+        "backgrounds": {
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.1)": 1,
+          "rgba(0, 0, 0, 0)": 154,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.95)": 2,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)": 19
+        },
+        "borders": {
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.1)": 17,
+          "rgb(255, 255, 255)": 27,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.75)": 36,
+          "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)": 11,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.95)": 1,
+          "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)": 28,
+          "rgb(0, 0, 0)": 6,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.9)": 8,
+          "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)": 18,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)": 8,
+          "oklab(0.999994 0.0000455678 0.0000200868 / 0.4)": 12,
+          "oklab(0.704006 0.176798 0.0722319 / 0.7)": 4
+        }
+      }
+    },
+    "typographyTop": {
+      "families": [
+        {
+          "label": "\"IBM Plex Mono\", monospace",
+          "count": 104
+        },
+        {
+          "label": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+          "count": 66
+        },
+        {
+          "label": "Niconne, cursive",
+          "count": 8
+        }
+      ],
+      "scale": [
+        {
+          "label": "14px",
+          "count": 59
+        },
+        {
+          "label": "15px",
+          "count": 40
+        },
+        {
+          "label": "12px",
+          "count": 28
+        },
+        {
+          "label": "16px",
+          "count": 14
+        },
+        {
+          "label": "20px",
+          "count": 10
+        },
+        {
+          "label": "36px",
+          "count": 5
+        }
+      ]
+    },
+    "colorTop": [
+      {
+        "label": "oklab(0.999994 0.0000455678 0.0000200868 / 0.75)",
+        "count": 36
+      },
+      {
+        "label": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)",
+        "count": 34
+      },
+      {
+        "label": "rgb(255, 255, 255)",
+        "count": 31
+      },
+      {
+        "label": "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+        "count": 25
+      },
+      {
+        "label": "oklab(0.999994 0.0000455678 0.0000200868 / 0.4)",
+        "count": 12
+      },
+      {
+        "label": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+        "count": 11
+      }
+    ]
+  }
+}
